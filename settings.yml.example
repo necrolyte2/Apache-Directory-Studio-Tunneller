@@ -1,0 +1,12 @@
+servers:
+    server.some.domain:
+        port_mappings:
+            8389: 389
+            8636: 636
+ssh_server:
+    username:
+    server:
+    ident_file:
+ADS:
+    #This command should not spawn another process. For OS X you need the -W switch for open
+    command_to_open: open -W /Applications/Apache\ Directory\ Studio.app
