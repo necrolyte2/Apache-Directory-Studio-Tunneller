@@ -1,0 +1,12 @@
+A really simple way to use Apache Directory Studio and have ssh tunnels going through another server
+You need to have a little working knowledge of ADS in order to do this, but it is pretty simple
+
+Setup:
+    - Working ssh key to the ssh server you will use as your proxy
+    - For each connection you have in Apache Directory Studio you should have an
+      entry in the settings.yml file
+    - Rename settings.yml.example to settings.yml and fill in the settings
+    - For the command_to_open you need to give it the command that will open ADS
+      This can be a bit tricky as that command cannot spawn a new process otherwise
+      this script will just exit and kill the tunnels right after it opens ADS.
+      The default option in the settings.yml file is for OS X
